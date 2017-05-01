@@ -1,0 +1,66 @@
+
+    
+<div class="row">
+
+      <div class="col-md-5">
+      <div class="jumbotron jumbotron-fluid">
+      <h2 class="display-2">Contact Details</h2>
+		    <div class="form-group">
+		    <label><span class="blue glyphicon glyphicon-user"></span> Name:</label>
+		    <p class="lead">Noel Philip</p>
+		  	</div>
+		  	<div class="form-group">
+		    <label><span class="green glyphicon glyphicon-envelope"></span> Address:</label>
+		    <p class="lead"><small>4/398-1, pallyparam, Edappally P.O, Cochin-682024, Ernakulam.</small></p>
+		  	</div>
+		  	<div class="form-group">
+		    <label><span class="red glyphicon glyphicon-phone"></span> Number:</label>
+		    <p class="lead"><small>9633086558</small></p>
+		  	</div>
+		  	<div class="form-group">
+		    <label><span  class="yellow glyphicon glyphicon-send"></span>  Email:</label>
+		    <p><small>noyo1000gt@gmail.com</small></p>
+		  	</div>
+      </div>
+      </div>
+      <div class="col-md-7">   
+      <div class="jumbotron">
+      <sebm-google-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
+        <!-- Show Markers according to list data !-->
+        
+      <sebm-google-map-marker 
+          
+          [latitude]="latitude"
+          [longitude]="longitude"
+          [label]="'Click Here'"
+          [markerDraggable]="false"
+          (dragEnd)="markerDragEnd(m, $event)">
+        <!-- Info Window display data on click!-->  
+        <sebm-google-map-info-window>
+            <div class="jumbotron jumbotron-fluid">
+		    <div class="form-group">
+		    <label><span class="blue glyphicon glyphicon-user"></span> Name:</label>
+		    <p class="lead">Noel Philip</p>
+		  	</div>
+		  	<div class="form-group">
+		    <label><span class="green glyphicon glyphicon-envelope"></span> Address:</label>
+		    <p class="lead"><small>4/398-1, pallyparam, Edappally P.O, Cochin-682024, Ernakulam.</small></p>
+		  	</div>
+		  	<div class="form-group">
+		    <label><span class="red glyphicon glyphicon-phone"></span> Number:</label>
+		    <p class="lead"><small>9633086558</small></p>
+		  	</div>
+		  	<div class="form-group">
+		    <label><span  class="yellow glyphicon glyphicon-send"></span>  Email:</label>
+		    <p><small>noyo1000gt@gmail.com</small></p>
+		  	</div>
+      </div>
+        </sebm-google-map-info-window>
+        
+      </sebm-google-map-marker>
+      
+      </sebm-google-map>
+      </div>
+      </div>
+    </div>
+    
